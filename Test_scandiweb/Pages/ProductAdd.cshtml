@@ -1,0 +1,49 @@
+﻿@page
+@model Test_scandiweb.Pages.ProductAddModel
+@{
+    ViewData["Title"] = "ProductAdd";
+}
+
+<h2>ProductAdd <button>Save</button></h2>
+<div class="col-md-4">
+
+    <form>
+        SKU:
+        <input type="text" name="SKU"><br>
+        Name:
+        <input type="text" name="Name"><br>
+        Price:
+        <input type="text" name="Price" /><br>
+        <br>
+        Type switcher
+        <select name="Type" id="Type">
+            <option value="disc">Disc</option>
+            <option value="book">Book</option>
+            <option value="furniture">Furniture</option>
+        </select>
+        <div class="disc" id="disc">
+            <label for="size in Mb">Size in Mb</label>
+            <input type="text" id="size">
+
+        </div>
+
+        <div class="book" id="book">
+            <label for="weight in Kg">Weight in Kg</label>
+            <input type="text" id="weight">
+        </div>
+        <div class="furniture" id="furniture">
+            <label for="size HHxWWxLL">size HHxWWxLL</label>
+            <input type="text" id="Height">
+            <input type="text" id="Width">
+            <input type="text" id="Lenght">
+        </div>
+    </form>
+
+</div>
+<div class="col-md-4">
+
+    <form>
+        test
+    </form>
+
+</div>
